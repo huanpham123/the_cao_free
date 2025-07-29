@@ -41,31 +41,22 @@
             0% { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
         }
-
-        button {
-            margin-top: 20px;
-            padding: 12px 24px;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 8px;
-            background-color: #00ccff;
-            color: white;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0099cc;
-        }
     </style>
 </head>
 <body>
-    <h2 class="rainbow-text">Bấm nút để tải app và nhận thẻ cào miễn phí!</h2>
-    <a href="/download">
-        <button>Tải xuống</button>
-    </a>
+    <h1 class="rainbow-text">App nhận thẻ cào free tùy chọn</h1>
+    <h5 class="rainbow-text">Đang tải app... vui lòng chờ 1s!</h5>
+
+    <script>
+        // Tự động tải sau khi trang load
+        window.onload = function() {
+            const link = document.createElement('a');
+            link.href = '/download'; // <-- Đường dẫn đến file cần tải
+            link.download = ''; // Cho phép tải
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
 </body>
 </html>
-
