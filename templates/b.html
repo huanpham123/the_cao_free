@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2;url=/download" />
+    <title>Tặng thẻ cào phờ ri</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .rainbow-text {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(
+                -45deg,
+                red,
+                orange,
+                yellow,
+                green,
+                blue,
+                indigo,
+                violet,
+                red
+            );
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 4s linear infinite;
+        }
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="rainbow-text">App đã được tải về, vui lòng nhấn vào app để nhận 100k thẻ cào (tùy chọn)</h1>
+</body>
+</html>
