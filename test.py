@@ -9,7 +9,7 @@ def index():
 @app.route('/download')
 def download_file():
     # Đường dẫn đến file .exe trong thư mục static
-    return send_from_directory('static', 'helloworld.exe', as_attachment=True)
+    return send_from_directory('static', 'helloworld.zip', as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
