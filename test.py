@@ -8,7 +8,7 @@ def index():
 
 @app.route('/download')
 def download():
-    return send_from_directory('static', 'tang_the_cao_free.exe', as_attachment=True)
+    return send_from_directory('static', 'helloworld.exe', as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
