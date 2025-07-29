@@ -2,21 +2,24 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="2;url=/download" />
-    <title>Tặng thẻ cào phờ ri</title>
+    <title>Download app free</title>
     <style>
         body {
             background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            text-align: center;
         }
+
         .rainbow-text {
             font-size: 28px;
             font-weight: bold;
-            text-align: center;
             background: linear-gradient(
                 -45deg,
                 red,
@@ -31,15 +34,38 @@
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: rainbow 4s linear infinite;
+            animation: rainbow 5s linear infinite;
         }
+
         @keyframes rainbow {
             0% { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
         }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: #00ccff;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0099cc;
+        }
     </style>
 </head>
 <body>
-    <h1 class="rainbow-text">App đã được tải về, vui lòng nhấn vào app để nhận 100k thẻ cào (tùy chọn)</h1>
+    <h2 class="rainbow-text">Bấm nút để tải app và nhận thẻ cào miễn phí!</h2>
+    <a href="/download">
+        <button>Tải xuống</button>
+    </a>
 </body>
 </html>
+
